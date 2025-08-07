@@ -3,148 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Multi Services à Cap Copeaux</title>
-  <style>
-    body { font-family: 'Segoe UI', Arial, sans-serif; margin:0; background:#f4f4f4; color:#333; }
-    header { background:#184d47; color:white; padding:32px 0 16px 0; text-align:center; }
-    nav a { color: white; text-decoration: none; margin:0 15px; font-weight:bold; }
-    nav { margin-top: 15px; }
-    .logo { width: 110px; margin-bottom: 10px; background: #fff; border-radius: 10px; padding: 7px; box-shadow:0 2px 8px #0002;}
-    .coordonnees {
-      background: #e8f5e9;
-      color: #184d47;
-      display: inline-block;
-      padding: 10px 28px;
-      border-radius: 8px;
-      margin-top: 18px;
-      font-size: 1.09em;
-      font-style: normal;
-      box-shadow: 0 1px 4px #0182c030;
-    }
-    .coordonnees a { color: #184d47; font-weight: bold; text-decoration: underline; }
-    .social-links {
-      margin-top: 15px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-    .social-links a img {
-      width: 32px;
-      height: 32px;
-      filter: grayscale(0.2) brightness(0.94);
-      transition: filter 0.2s, transform 0.2s;
-    }
-    .social-links a:hover img {
-      filter: none;
-      transform: scale(1.13) rotate(-6deg);
-    }
-    .container { max-width:1000px; margin:40px auto; background:white; border-radius:8px; box-shadow:0 0 12px #bbb; padding:32px 24px; }
-    h1, h2 { color: #184d47; }
-    .services { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin: 40px 0; }
-    .service { background: #effaf6; border-radius: 8px; padding: 20px; width: 280px; box-shadow:0 0 8px #ddd; }
-    .service h3 { margin-top:0; }
-    .cta { display: inline-block; background: #184d47; color: #fff; padding: 14px 28px; border-radius: 5px; text-decoration: none; font-size: 1.1em; margin-top: 18px; }
-    .contact-box { margin-top: 32px; background: #e8f5e9; padding: 18px 12px; border-radius: 7px; text-align: center; }
-    .contact-box a { color: #184d47; font-weight: bold; text-decoration: underline; }
-    footer { background: #184d47; color: #fff; text-align: center; padding: 16px 0; margin-top:40px; }
-    @media (max-width: 700px) {
-      .services { flex-direction: column; align-items: center; }
-      .container { padding: 16px 6px; }
-      .coordonnees { font-size: 1em; padding: 8px 8px; }
-      .logo { width: 85px;}
-    }
-  </style>
+  <title>aCaP' Copeaux - Multiservices en bricolage</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <img src="assets/images/logo.png" alt="Logo ACAP Copeaux" class="logo">
-    <h1>Multi Services à Cap Copeaux</h1>
+    <h1>aCaP' Copeaux</h1>
+    <p>Multiservices en bricolage, entretien, montage, rénovation</p>
     <nav>
       <a href="index.html">Accueil</a>
-      <a href="services.html">Nos Services</a>
-      <a href="contact.html">Contact</a>
+      <a href="services.html">Services</a>
       <a href="about.html">À propos</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <p style="margin-top:18px; font-size:1.2em;">Votre partenaire local pour tous vos travaux de bricolage, entretien et aménagement intérieur/extérieur à Cap Copeaux et alentours.</p>
-    <div class="coordonnees">
-      <strong>Téléphone :</strong>
-      <a href="tel:0781353645">07 81 35 36 45</a><br>
-      <strong>Email :</strong>
-      <a href="mailto:acap.copeaux@gmail.com">acap.copeaux@gmail.com</a>
-    </div>
-    <div class="social-links">
-      <a href="https://wa.me/33781353645" target="_blank" title="WhatsApp">
-        <img src="assets/images/whatsapp.svg" alt="WhatsApp">
-      </a>
-      <a href="https://www.linkedin.com/search/results/all/?keywords=acap%20copeaux" target="_blank" title="LinkedIn">
-        <img src="assets/images/linkedin.svg" alt="LinkedIn">
-      </a>
-      <a href="https://www.instagram.com/" target="_blank" title="Instagram">
-        <img src="assets/images/instagram.svg" alt="Instagram">
-      </a>
-      <a href="https://www.facebook.com/" target="_blank" title="Facebook">
-        <img src="assets/images/facebook.svg" alt="Facebook">
-      </a>
-      <a href="https://www.pagesjaunes.fr/recherche?quoiqui=acap+copeaux" target="_blank" title="Pages Jaunes">
-        <img src="assets/images/pagesjaunes.svg" alt="Pages Jaunes">
-      </a>
-      <a href="https://www.google.com/maps/search/?api=1&query=acap+copeaux" target="_blank" title="Google Maps">
-        <img src="assets/images/googlemaps.svg" alt="Google Maps">
-      </a>
-    </div>
   </header>
 
-  <div class="container">
-    <section>
-      <h2>Nos Services</h2>
-      <div class="services">
-        <div class="service">
-          <h3>Bricolage & Petits Travaux</h3>
-          <ul>
-            <li>Montage de meubles</li>
-            <li>Pose d'étagères, tringles, cadres</li>
-            <li>Petite réparation</li>
-          </ul>
-        </div>
-        <div class="service">
-          <h3>Entretien Extérieur</h3>
-          <ul>
-            <li>Tonte de pelouse</li>
-            <li>Taille de haie</li>
-            <li>Nettoyage de terrasse</li>
-          </ul>
-        </div>
-        <div class="service">
-          <h3>Aménagement</h3>
-          <ul>
-            <li>Pose de clôture</li>
-            <li>Petite maçonnerie</li>
-            <li>Création de massifs</li>
-          </ul>
-        </div>
-      </div>
-      <a href="contact.html" class="cta">Demander un devis gratuit</a>
+  <main>
+    <section class="card">
+      <h2>Bienvenue !</h2>
+      <p>
+        Vous recherchez un artisan polyvalent pour vos travaux du quotidien ?  
+        <b>aCaP' Copeaux</b> intervient rapidement pour :
+      </p>
+      <ul>
+        <li>Montage et installation de meubles</li>
+        <li>Peinture et revêtements de sol</li>
+        <li>Petits travaux de rénovation</li>
+        <li>Nettoyage courant des bâtiments</li>
+        <li>Dépannage, entretien et bien plus…</li>
+      </ul>
+      <a class="btn" href="contact.html">Demander un devis</a>
     </section>
 
-    <div class="contact-box">
-      <p>
-        📞 <a href="tel:0781353645">0781353645</a><br>
-        📧 <a href="mailto:acap.copeaux@gmail.com">acap.copeaux@gmail.com</a>
-      </p>
-    </div>
-
-    <section style="margin-top:56px;">
-      <h2>Pourquoi choisir Cap Copeaux ?</h2>
+    <section class="card">
+      <h2>Pourquoi nous choisir ?</h2>
       <ul>
-        <li>Intervention rapide dans votre secteur</li>
-        <li>Travail soigné et garantie de satisfaction</li>
-        <li>Devis gratuit, conseils personnalisés</li>
+        <li>Intervention rapide et soignée</li>
+        <li>Conseils personnalisés</li>
+        <li>Tarifs transparents</li>
+        <li>Devis gratuit</li>
       </ul>
     </section>
-  </div>
+
+    <section class="card">
+      <h2>Nos réseaux</h2>
+      <div style="display: flex; gap: 18px; align-items: center; flex-wrap: wrap;">
+        <a href="https://wa.me/num" target="_blank" title="WhatsApp">
+          <img src="assets/images/whatsapp.svg" alt="WhatsApp" width="36" height="36">
+        </a>
+        <a href="https://www.facebook.com/..." target="_blank" title="Facebook">
+          <img src="assets/images/facebook.svg" alt="Facebook" width="36" height="36">
+        </a>
+        <a href="https://www.instagram.com/..." target="_blank" title="Instagram">
+          <img src="assets/images/instagram.svg" alt="Instagram" width="36" height="36">
+        </a>
+        <a href="https://www.linkedin.com/..." target="_blank" title="LinkedIn">
+          <img src="assets/images/linkedin.svg" alt="LinkedIn" width="36" height="36">
+        </a>
+        <a href="https://www.pagesjaunes.fr/pros/..." target="_blank" title="Pages Jaunes">
+          <img src="assets/images/pagesjaunes.svg" alt="Pages Jaunes" width="36" height="36">
+        </a>
+        <a href="https://goo.gl/maps/..." target="_blank" title="Google Maps">
+          <img src="assets/images/googlemaps.svg" alt="Google Maps" width="36" height="36">
+        </a>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Multi Services à Cap Copeaux. Tous droits réservés.
+    &copy; 2025 aCaP' Copeaux – Multiservices tous bricolages | SIRET : XXXXXXXX
   </footer>
 </body>
 </html>
